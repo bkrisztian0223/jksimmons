@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://www.ubuy.hu/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFuSmdrUWF1MUwuX0FDX1NMMTUwMF8uanBn.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+#container {
+    width: 480px;
+    max-width: calc(100vw - 10px);
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 4px;
+    box-shadow: hsla(237, 1%, 67%, .2) 10px 10px 80px;
+  }
