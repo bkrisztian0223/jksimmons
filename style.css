@@ -1,16 +1,338 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url("https://www.ubuy.hu/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFuSmdrUWF1MUwuX0FDX1NMMTUwMF8uanBn.jpg") no-repeat center center fixed;
-    background-size: cover;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-#container {
-    width: 480px;
-    max-width: calc(100vw - 10px);
-    background-color: red;
-    opacity: 0.5;
-    border-radius: 4px;
-    box-shadow: hsla(237, 1%, 67%, .2) 10px 10px 80px;
-  }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* --------------------RESET VÉGE------------------------------- */
+
+
+
+#box {
+  width: 400px;
+  height: 400px;
+  max-width: calc(100vw - 20px);
+  border-radius: 17%
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://www.ubuy.hu/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFuSmdrUWF1MUwuX0FDX1NMMTUwMF8uanBn.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.circle {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  float: right;
+  background-color: rgba(241, 247, 240, 0.7);
+  border-radius: 50%;
+}
+
+.circle:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: grayscale(1%);
+  transform: scale(1.2);
+  opacity: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 100%;
+  filter: grayscale(90%);
+  transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: grayscale(1%);
+  transform: scale(1.2);
+  opacity: 100%;
+}
+
+#r1 {
+  height: 32%;
+  width: 100%;
+}
+
+#r2 {
+  height: 32%;
+  width: 100%;
+}
+
+#r3 {
+  height: 32%;
+  width: 100%;
+}
+
+#c1 {
+  height: 100%;
+  width: 32%;
+}
+
+#c2 {
+  height: 100%;
+  width: 32%;
+}
+
+#c3 {
+  height: 100%;
+  width: 32%;
+}
+
+#c4 {
+  height: 100%;
+  width: 32%;
+}
+
+#c5 {
+  height: 100%;
+  width: 32%;
+}
+
+#c6 {
+  height: 100%;
+  width: 100%;
+}
+
+#c7 {
+  height: 100%;
+  width: 32%;
+}
+
+#c8 {
+  height: 100%;
+  width: 32%;
+}
+
+#c9 {
+  height: 100%;
+  width: 32%;
+}
+
+.fugg {
+
+  float: right;
+}
+
+#fo1 {
+  height: 100%;
+  width: 2%;
+}
+
+#fo2 {
+  height: 100%;
+  width: 2%;
+}
+
+#fo3 {
+  height: 100%;
+  width: 2%;
+}
+
+#fo4 {
+  height: 100%;
+  width: 2%;
+}
+
+#fo5 {
+  height: 100%;
+  width: 2%;
+}
+
+#fo6 {
+  height: 100%;
+  width: 2%;
+}
+
+#vs1 {
+  height: 2%;
+  width: 100%;
+}
+
+#vs2 {
+  height: 2%;
+  width: 100%;
+}
+
+.vs {
+  float: right;
+}
+
+.name {
+  font-size: 1.7em;
+}
+
+.cv {
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(241, 247, 240, 0.7);
+  border-radius: 20px;
+}
+
+.cv:hover {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1%);
+  transform: scale(1.2);
+  opacity: 100%;
+}
+
+li {
+  text-align: center;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+.about {
+  margin: 2px;
+  text-align: center;
+}
